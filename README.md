@@ -113,26 +113,6 @@ This program triggers the debug failure on the line `accessor enum E1 {}`.
 
 To reproduce the issue, you can use the provided Docker image and node.js/tsc configuration files.
 
-### Setup
-
-1. **Clone the repository:**
-
-    ```sh
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-2. **Load the Docker image:**
-
-    ```sh
-    docker load -i y1_image.tar
-    ```
-
-3. **Run the Docker container:**
-
-    ```sh
-    docker run -it --name ts-debug-container y1_image
-    ```
 
 ### Compile the Programs
 
@@ -141,8 +121,7 @@ Inside the Docker container, compile the TypeScript programs to observe the debu
 1. **Compile `importHelpersNoHelpers.ts`:**
 
     ```sh
-    cd TSCFuzzer/tscFuzz
-    tsc checked/importHelpersNoHelpers.ts
+    tsc importHelpersNoHelpers.ts
     ```
 
 2. **Compile `autoAccessorDisallowedModifiers.ts`:**

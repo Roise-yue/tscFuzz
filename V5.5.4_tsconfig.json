@@ -1,0 +1,19 @@
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2023","dom"],
+    "noEmitOnError":true
+  },
+  "include": [
+    "TScorpus/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

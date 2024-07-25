@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "test": "test"
   },
   "scripts": {
     "test": "nyc --reporter=text --reporter=lcov mocha "
@@ -15,12 +16,25 @@
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@eslint/js": "^9.7.0",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.6.13",
+    "@types/node": "^20.14.9",
+    "eslint": "^8.56.0",
+    "eslint-plugin-complexity": "^1.0.2",
+    "globals": "^15.8.0",
     "jshint": "^2.13.6",
     "mocha": "^10.4.0",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "ts-complex": "^1.0.0",
+    "typescript-eslint": "^7.16.0"
   },
   "dependencies": {
-    "rimraf": "^5.0.7"
+    "@tsed/socketio": "^7.74.1",
+    "ts-complex-numbers": "^1.0.5",
+    "typescript": "^5.5.4"
   },
+  "keywords": [],
   "description": ""
 }
+
